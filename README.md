@@ -1,2 +1,2 @@
 # PathFinderVisualizer
-Enjoy using the path finder visualizer. To be updated with more path finding algorithms. 
+Implemented in pygame and by using purely python. Supports Dijkstra, Depth-first search, and Breadth-first search so far. Will support A*. 
