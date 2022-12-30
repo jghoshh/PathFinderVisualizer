@@ -133,11 +133,12 @@ def main(surface, rows, size):
                     #GET INPUT FROM USERS FIRST
 
                     print()
-                    inp = str(input("Enter the code for the path-finding algorithm that you want to visualize\n(B for BFS, D for DFS, A for A*, DI for Dijkstra, R to reset grid, or Q to quit): ")).strip().upper()
+                    inp = ask_input()
                     print()
                     graph_dict = {"A": algos.dk.dk, "B": algos.bfs.bfs, "D": algos.dfs.dfs, "DI": algos.dk.dk}
                     
                     while True:
+                        started = True
                         if inp in graph_dict:
                             for row in grid.grid: 
                                 for spot in row: 
@@ -147,8 +148,7 @@ def main(surface, rows, size):
                             graph_dict[inp](lambda: grid.draw_grid(surface), grid.grid, start, end)
                         else: 
                             if (inp != "R" and inp != "Q"): 
-                                print("Running Dijkstra by default, as input wasn't valid.")
-                                graph_dict["DI"](lambda: grid.draw_grid(surface), grid.grid, start, end)
+                                break
                                 started = False
                             elif inp == "Q": 
                                 run = False
