@@ -1,10 +1,10 @@
 #setting up the color pallete represented in RGB notation. 
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
+RED = (2, 62, 138)
+GREEN = (72, 202, 228)
 YELLOW = (255, 255, 0)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 PURPLE = (128, 0, 128)
 ORANGE = (255, 165 ,0)
 GREY = (128, 128, 128)
-TURQUOISE = (64, 224, 208)
+TURQUOISE = (217, 93, 57)
