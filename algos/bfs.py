@@ -1,4 +1,4 @@
-
+#BFS ALGO
 queue = []
 
 def make_path(parent, end, draw):
@@ -9,6 +9,7 @@ def make_path(parent, end, draw):
         curr = parent[curr]
     end.make_end()
 
+#ACTUAL BFS ALGO
 def bfs(draw, grid, start, end): 
     visited = set()
     parent = {}

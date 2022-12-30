@@ -1,6 +1,7 @@
-
+#DFS ALGO
 stack = []
 
+#trace back from end spot and make the path.
 def make_path(parent, end, draw):
     curr = end
     while (parent[curr] != None): 
@@ -9,6 +10,7 @@ def make_path(parent, end, draw):
         curr = parent[curr]
     end.make_end()
 
+#ACTUAL DFS ALGO
 def dfs(draw, grid, start, end): 
     visited = set()
     parent = {}

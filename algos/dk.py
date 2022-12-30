@@ -1,6 +1,7 @@
 #DIJKSTRA ALGO
 import heapq
 
+#trace back from end spot and make the path.
 def make_path(parent, end, draw):
     curr = end
     while (parent[curr] != None): 
