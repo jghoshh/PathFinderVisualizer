@@ -171,5 +171,5 @@ def ask_input():
     return str(input("Enter the code for the path-finding algorithm that you want to visualize\n(B for BFS, D for DFS, A for A*, DI for Dijkstra, R to reset grid, or Q to quit): ")).strip().upper()
 
 if __name__ == "__main__": 
-    ROWS = 50
+    ROWS = 100
     main(WINDOW, ROWS, size) 
